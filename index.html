@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Cat Advice</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Advice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  
+
+<section class="section">
     <div class="container">
-       <h1>Cat Advice</h1>
-       <p id="adviceDisplay"></p>
+        <h1 class="title">Cat Advice</h1>
+        <p>Feeling bad? Let a cat give you advice.</p>
+        <div id="catImage" class="box">
+        </div>
+        <button id="adviceButton" class="button is-primary">Meow</button>
+        <div id="advice" class="notification is-info"></div>
     </div>
-  <script src="script.js"></script>
+</section>
 
+<script src="script.js"></script>
 </body>
-
 </html>
