@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,21 +23,21 @@
     </section>
 
     <!-- Main content section with a box for cat images, a button, and an advice notification -->
-    <section class="section">
-        <div class="container">
-            
-            <!-- Box for displaying cat images -->
-            <div class="box" id="catImage"></div>
-            
-            <!-- Button to trigger cat advice -->
-            <button id="adviceButton" class="button is-caucasian-blue">Advice</button>
-            
-            <!-- Notification area for displaying cat advice -->
-            <div id="advice" class="notification is-caucasian-blue"></div>
-
+    <div class="columns is-vcentered">
+        <div class="column is-half">
+            <figure class="image is-4by3">
+                <img id="catImage" src="https://cataas.com/cat/says/Hello" alt="Cat in Suit">
+            </figure>
         </div>
-    </section>
+        <div class="column is-half">
+            <div id="advice" class="notification is-info"></div>
+        </div>
+    </div>
+    <div class="has-text-centered">
+        <button id="adviceButton" class="button is-large is-primary">Advice</button>
+    </div>
 
+    
     <!-- Footer section with copyright information -->
     <footer class="footer is-caucasian-blue">
         
