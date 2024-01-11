@@ -11,8 +11,8 @@ function getAdvice() {
 }
 
 function getCatImage() {
-    
-    document.getElementById('catImage').src = 'https://cataas.com/cat';
+    const refresh = new Date().getTime();
+    document.getElementById('catImage').src = 'https://cataas.com/cat?refresh=' + refresh;
 }
 
 document.getElementById('adviceButton').addEventListener('click', function() {
