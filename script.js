@@ -5,7 +5,13 @@ function getAdvice() {
         .then(data => {
             const advice = data.slip.advice;
             document.getElementById('advice').textContent = advice;
-            localStorage.setItem('storedAdvice', advice);
+            const storedAdvice = JSON.parse(localStorage.getItem('storedAdvice')) || [];
+            const adviceObject = {
+                advice: advice
+            };
+            storedAdvice.push(adviceObject);
+            localStorage.setItem('storedAdvice', JSON.stringify(storedAdvice));
+
         })
         .catch(error => {
             console.error("Error retrieving advice:", error);
@@ -25,4 +31,4 @@ document.getElementById('adviceButton').addEventListener('click', function() {
     getAdvice();
     getCatImage();
 })
-
+                                                                                                                                                            
