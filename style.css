@@ -1,6 +1,6 @@
 /* Overall styling for the body */
 body {
-    background-color: #00ffffd3;
+    background-color: #ffffffd3;
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@ body {
 
 /* Styling for the hero section at the top */
 .hero {
-    background-color: #00ffffd3;
+    background-color: #FFA756;
     color: #333;
     padding: 3rem 1.5rem;
     border-radius: 10px;
@@ -25,17 +25,17 @@ body {
 }
 
 /* Styling for cat images within the box */
-#catImage img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+#catImage {
+    /* margin-left: 500px; */
+    border-radius: 20px;
+
 }
 
 /* Styling for the advice button */
 #adviceButton {
     margin-top: 20px;
-    display: block;
-    margin: 0 auto;
+    /* display: block; */
+    /* margin: 0 auto; */
     font-size: 1.5em;
     padding: 15px 30px;
     transition: background-color 0.3s ease;
@@ -49,16 +49,21 @@ body {
 /* Styling for the advice notification area */
 #advice.notification {
     margin-top: 20px;
-    background-color: #fff;
+    background-color: #FFA756;
     color: #333;
     border-radius: 10px;
+    /* margin-right: 100px; */
 }
 
 /* Styling for the footer at the bottom of the page */
 .footer {
-    margin-top: auto;
+    /* margin-top: 700px; */
     padding: 1rem 0;
-    background-color: #00ffffd3;
+    background-color:  #FFA756;
     color: #333;
     border-top: 1px solid #ccc;
+}
+
+.cat-emoji {
+    margin-right: 100px;
 }
